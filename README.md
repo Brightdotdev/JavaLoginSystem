@@ -30,9 +30,9 @@ and connecting with databases, this project is easy to run and extend.
     - Install MySQL: [MySQL Installation Guide](https://dev.mysql.com/downloads/installer/)
     - Start MySQL Server and create a database:
 
-      ```SQL
-      CREATE DATABASE login_system_db;
-      ```
+  ```sql
+  CREATE DATABASE login_system_db;
+  ```
 
 - **Configure Database Connection**: Update the database credentials in the application's configuration file (e.g., `db.properties` or `application.properties`) with your MySQL username, password, and database name.
 

@@ -24,8 +24,10 @@ public class SignUpController{
    @FXML private Text checkBoxValidationText;
     private Stage stage;
     @FXML private CheckBox checkBoxValidation;
+    /*
+    I will still eventually use these elements
     @FXML private Button homepageButton;
-    @FXML private Button submitButton;
+    @FXML private Button submitButton;*/
     @FXML private PasswordField userPasswordValidation;
     @FXML private PasswordField userPassword;
     @FXML private TextField userNameField;
@@ -92,6 +94,7 @@ public class SignUpController{
 
         if (!checkBoxValidation.isSelected()) {
           //  String initialText  = checkBoxValidationText.getText();
+
             checkBoxValidationText.setStyle("-fx-text-fill: red");
             checkBoxValidationText.setText("The Checkbox must be clicked man");
             return false;
@@ -110,7 +113,7 @@ public class SignUpController{
                 }
     }
 
-    public void signUp() throws InputCantBeEmptyException {
+    public void signUp(){
         try {
 
             boolean validation = insertUserData();
